@@ -1,0 +1,21 @@
+body {
+    background-color: #eff;
+
+}
+
+#home {
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+a:link {
+    color: indianred;
+    text-decoration: none;
+}
+
+a:visited {
+    color: indianred;
+    text-decoration: none;
+}
