@@ -1,0 +1,56 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timeline {
+  position: relative;
+}
+
+#line {
+  position: absolute;
+  left: calc(50% - 1px);
+  height: 100%;
+  width: 2px;
+  background: darkred;
+}
+
+#end {
+  margin: 0.5em;
+}
+
+
+.timeline-container {
+  margin: 0;
+  width: auto;
+}
+
+div.timeline-container p {
+  background: darkred;
+  color: white;
+  padding: 1em;
+  margin: 2em 0;
+  width: auto;
+  text-align: center;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+div.timeline-container:nth-child(odd) p {
+  position: relative;
+  left: calc(50% + 1.5em);
+}
+
+div.timeline-container:nth-child(even) p {
+  position: relative;
+  right: calc(50% + 1.5em);
+}
+
+.node {
+  position: absolute;
+  left: calc(50% - 1em);
+  z-index: 1;
+  height: 2em;
+  width: 2em;
+  background: radial-gradient(closest-side, darkred, darkred 15%, white 20%, white 45%, darkred 50%, darkred 60%, white 65%);
+}
