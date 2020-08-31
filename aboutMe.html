@@ -3,58 +3,88 @@
 
 <head>
     <title>About Ainsley</title>
-    <link href="style/main.css" rel="stylesheet">
+    <link href="style/aboutme.css" rel="stylesheet">
 </head>
 
 <body>
-    <!---完全可以写成scp风格或者是某种记录报告的风格-->
-    <div id="AboutMe">
-        <p>项目名：【数据删除】</p>
-        <p>存在日期：20??.2.20 - </p>
-        <p>生理性别: 女</p>
-        <P>心理性别：无明显特征</P>
-        <p>现处管理处：魔都临时管理柜，待转移</p>
-        <p>技能数据输入进度：
-            <ul>
-                <li>c++深入</li>
-                <li>c入门</li>
-                <li>python入门</li>
-                <li>html/css入门</li>
-                <li>javascript入门</li>
-            </ul>
-        </p>
-        <p>研究员接触方式：
-            <ul>
-                <li>
-                    email：qlxyssd@gmail.com
-                </li>
-                <li>
-                    qq: 1586178748
-                </li>
-                <li>
-                    tel：18817512853</li>
-            </ul>
-        </p>
-        <p>
-            项目用途：
-            <ul>
-                <li>
-                    <a title="初等教育家教">中等知识教授</a>
-                </li>
-                <li>
-                    <a title="哲学和科学交流">灵魂能量共鸣</a>
-                </li>
-                <li>
-                    <a title="coc/dnd跑团">虚拟世界构建</a>
-                </li>
-                <li>
-                    <a title="联机打游戏">虚拟能量辅助</a>
-                </li>
-            </ul>
-            仍在扩展中……
-        </p>
-    </div>
-    <a href="index.html">点击这里返回主页</a>
+    <nav id="Back">
+        <h1><a href="./index.html">Home Page</a></h1>
+    </nav>
+
+    <main id="AboutMe">
+        <section id="Basics">
+            <h1>基本信息：</h1>
+            <div>
+                <p class="item-title">创造者姓名:</p>
+                <p class="item-content"><span class="protected name"></span></p>
+                <p class="item-title">存在日期:</p>
+                <p class="item-content">20<span class="protected date"></span>.2.20 - </p>
+                <p class="item-title">生理性别:</p>
+                <p class="item-content"> 女</p>
+                <P class="item-title">心理性别:</p>
+                <p class="item-content">无明显特征</P>
+                <p class="item-title">现处管理处:</p>
+                <p class="item-content">上海科技大学</p>
+            </div>
+        </section>
+        <section id="Skills">
+            <h1>技能数据传输进度：</h1>
+            <div>
+                <p class="item-title">c++:</p>
+                <div class="item-progress">
+                    <div class="progress-outer">
+                        <div class="progress-inner progress-40"></div>
+                    </div>
+                    <p>40% <span class="tend">▶</span></p>
+                </div>
+                <p class="item-title">javascript:</p>
+                <div class="item-progress">
+                    <div class="progress-outer">
+                        <div class="progress-inner progress-30"></div>
+                    </div>
+                    <p>30% <span class="tend">▶▶</span></p>
+                </div>
+                <p class="item-title">python:</p>
+                <div class="item-progress">
+                    <div class="progress-outer">
+                        <div class="progress-inner progress-40"></div>
+                    </div>
+                    <p>40% <span class="tend">◀◀</span></p>
+                </div>
+                <p class="item-title">html:</p>
+                <div class="item-progress ">
+                    <div class="progress-outer">
+                        <div class="progress-inner progress-20"></div>
+                    </div>
+                    <p>20% <span class="tend">▶▶▶</span></p>
+                </div>
+                <p class="item-title">css:</p>
+                <div class="item-progress">
+                    <div class="progress-outer">
+                        <div class="progress-inner progress-50"></div>
+                    </div>
+                    <p>50% <span class="tend">▶</span></p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>创造者接触方式：</h1>
+            <div>
+                <p>email：<span class="protected email"></span></p>
+                <p>qq: 1586178748</p>
+                <p>tel：<span class="protected telnumber"></span></p>
+                <p>github：<a href="https://github.com/EAinsley">EAinsley</a></p>
+            </div>
+        </section>
+    </main>
+    <aside id="type">
+        <p><span id="CustomType">[un]</span>classified</p>
+    </aside>
+
+    <footer>
+        <p>此页面由Ainsley制作 ->
+            <a href="log/index.html">建站日志</a></p>
+    </footer>
 </body>
 
 </html>
