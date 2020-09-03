@@ -17,13 +17,28 @@ body {
 }
 
 ::selection {
-  background: rgba(255, 255, 0, 0.5);
+  background: rgba(139, 0, 0, 0.5);
+  color: white;
 }
 
 .protected::before {
   color: transparent;
-  text-shadow: grey 0 0 10px;
+  text-shadow: grey 0 0 15px;
   transition: .3s ease-in-out;
+}
+
+.protected:hover::before{
+  text-shadow: grey 0 0 7px;
+}
+
+.reveiled::before{
+  color: black;
+  text-shadow: none;
+  transition: .3 ease-in-out;
+}
+
+.reveiled:hover::before{
+  text-shadow: none;
 }
 
 
@@ -109,6 +124,7 @@ main p {
   height: 100%;
   background: repeating-linear-gradient(-45deg, black 0, black 3px, white 3px, white 6px);
   z-index: 1;
+  border-right: black solid 2px;
 }
 
 .progress-20 {
