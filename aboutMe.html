@@ -85,6 +85,18 @@
         <p>此页面由Ainsley制作 ->
             <a href="log/index.html">建站日志</a></p>
     </footer>
+    <script>
+        for (let protect of document.getElementsByClassName("protected")) {
+            protect.addEventListener("mousedown", function (e) {
+                this.className += " reveiled";
+            }
+            )
+
+        }
+
+
+    </script>
+
 </body>
 
 </html>
